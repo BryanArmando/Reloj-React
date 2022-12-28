@@ -9,7 +9,7 @@ class Reloj extends Component{
         };
     }
 
-    componenteMount(){
+    componentDidMount(){
         this.timeId = setInterval(() => {
             this.setState({
                 time: new Date()
@@ -17,7 +17,7 @@ class Reloj extends Component{
         }, 1000);
     }
 
-    componentWillMoun(){
+    componentWillMount(){
         clearInterval(this.timeId)
     }
 
@@ -45,4 +45,4 @@ class Reloj extends Component{
 }
   };
   
-  export default Reloj
+  export default Reloj;
